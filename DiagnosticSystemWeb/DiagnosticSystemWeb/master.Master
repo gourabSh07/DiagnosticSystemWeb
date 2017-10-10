@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="DiagnosticSystemWeb.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	
+	<asp:ContentPlaceHolder ID="title" runat="server">
+		
+		</asp:ContentPlaceHolder>
+	<link href="Css/Reset.css" rel="stylesheet" />
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	<asp:ContentPlaceHolder ID="header_section" runat="server"></asp:ContentPlaceHolder>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/custom.js"></script>
+	  <script src="js/jquery.easing.min.js"></script>
+	  <script src="js/jquery.min.js"></script>
+	 
+	  <link href="css/style.css" rel="stylesheet" />
+	  <link href="css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body>
+	
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	</div>
+	<div class="collapse navbar-collapse">
+	  <ul class="nav navbar-nav">
+		<li class="active"><a href="indexUI.aspx">Home</a></li>
+		<li><a href="#">About</a></li>  
+				<li><a href="#" class="navbar-brand">Contact</a></li>
+				<li><a href="#"class="navbar-brand">Service</a></li>
+				<li><a href="#">Help Us</a></li>
+	  </ul>
+	</div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="wide">
+	<div class="col-xs-5 line"><hr></div>
+	<div class="col-xs-2 logo"><a href="#content" class="btn btn-info">Diagnostic Management</a></div>
+	<div class="col-xs-5 line"><hr></div>
+</div>
+   <div class="content">
+<div id="content" class="row">
+			<div class="col-sm-12">
+			<ul class="nav nav-tabs nav-stacked left-sidebar">
+			   <li class="dropdown-header"> <h3>Setup</h3></li>
+				<li><a href="TestTypeSetupUI.aspx">Test Type Setup</a></li>
+				<li><a href="TestSetupUI.aspx">Test Setup</a></li>
+			   <li class="dropdown-header"><h3 >Test Request</h3></li> 
+			  <li><a href="TestRequestEntryUI.aspx">Test Request Entry</a></li>
+			  <li><a href="PaymentUI.aspx">Payment</a></li>
+			   <li class="dropdown-header"><h3>Report</h3></li> 
+			  <li><a href="TestWiseReportUI.aspx">Test Wise </a></li>
+			  <li><a href="TypeWiseReportUI.aspx">Type Wise</a></li>
+			  <li><a href="UnPaidBillWiseReportUI.aspx">Unpaid Bill</a></li>
+			</ul>
+		  </div>
+
+</div>  
+</div>
+   <aside>
+		<asp:ContentPlaceHolder ID="MainContent" runat="server">
+		
+		</asp:ContentPlaceHolder>
+	</aside>
+	<footer>
+					
+					© Copyright Dot NEt Maniac. All Rights Reserved	
+				
+	</footer>
+		<script type="text/javascript" src="js/Scripts/jquery-3.1.1.js"></script>
+	<script src="Scripts/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="/js/custom-script.js"></script>
+</body>
+</html>
